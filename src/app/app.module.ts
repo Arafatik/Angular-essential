@@ -1,5 +1,6 @@
 import { AppComponent } from "./app.component";
 import { BrowserModule } from "@angular/platform-browser";
+import { FormsModule } from "@angular/forms";
 import { NgModule } from "@angular/core";
 import { Post2Component } from "./post2/post2.component";
 import { Post3Component } from "./post3/post3.component";
@@ -14,7 +15,7 @@ import { PostComponent } from "./post/post.component";
     Post3Component,
     Post4Component,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

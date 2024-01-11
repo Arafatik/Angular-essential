@@ -6,34 +6,9 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  title = "Dynamic title";
-  number = 42;
-  arr = [1, 2, 3];
+  title = "Initial";
 
-  obj = { a: 1, b: { c: 2 } };
-
-  inputValue = "";
-
-  /*img =
-    "https://styles.redditmedia.com/t5_2su6s/styles/communityIcon_4g1uo0kd87c61.png";*/
-
-  constructor() {
-    /*setTimeout(() => {
-      console.log("Timeout is over");
-      this.img =
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc10uXFleZuTdeL4R0JYdMlHPpR0EiE1f6etcMoUr7tA&s";
-    }, 5000);*/
-  }
-
-  onInput(event: KeyboardEvent) {
-    this.inputValue = (<HTMLInputElement>event.target).value;
-  }
-
-  onBlur(str: string) {
-    this.inputValue = str;
-  }
-
-  onClick() {
-    console.log("Click!");
+  onInput(event: any) {
+    this.title = event.target.value;
   }
 }
