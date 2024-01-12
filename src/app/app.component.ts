@@ -19,4 +19,9 @@ export class AppComponent {
     },
     { title: "Следующий блок в Angular", text: "Директивы в Angular", id: 2 },
   ];
+
+  updatePosts(post: Post) {
+    this.posts.unshift(post);
+    // console.log("Post", post);
+  }
 }
