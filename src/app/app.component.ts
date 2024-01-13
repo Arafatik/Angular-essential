@@ -17,18 +17,18 @@ export class AppComponent implements OnInit {
       text: "Здесь все про создание компонентов в Angular",
       id: 1,
     },
-    // { title: "Следующий блок в Angular", text: "Директивы в Angular", id: 2 },
+    { title: "Следующий блок в Angular", text: "Директивы в Angular", id: 2 },
   ];
 
   ngOnInit(): void {
-    setTimeout(() => {
+    /*setTimeout(() => {
       console.log("Timeout");
       this.posts[0] = {
         title: "changed",
         text: "changed 2",
         id: 3,
       };
-    }, 5000);
+    }, 5000);*/
   }
 
   updatePosts(post: Post) {

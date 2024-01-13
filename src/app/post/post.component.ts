@@ -15,6 +15,7 @@ import {
   OnInit,
   Output,
   SimpleChanges,
+  ViewEncapsulation,
 } from "@angular/core";
 
 import { Post } from "../app.component";
@@ -24,6 +25,7 @@ import { Post } from "../app.component";
   templateUrl: "./post.component.html",
   styleUrls: ["./post.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  encapsulation: ViewEncapsulation.None,
 })
 export class PostComponent
   implements
