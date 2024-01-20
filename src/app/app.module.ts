@@ -1,10 +1,11 @@
 import { AppComponent } from "./app.component";
 import { BrowserModule } from "@angular/platform-browser";
+import { ExMarksPipe } from "./pipes/ex-marks.pipe";
 import { FormsModule } from "@angular/forms";
 import { MultByPipe } from "./pipes/mult-by.pipe";
 import { NgModule } from "@angular/core";
 @NgModule({
-  declarations: [AppComponent, MultByPipe],
+  declarations: [AppComponent, MultByPipe, ExMarksPipe],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
